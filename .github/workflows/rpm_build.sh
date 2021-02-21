@@ -4,7 +4,6 @@ ls
 cd ..
 pwd
 ls
-cd "${NE_NAME}" || exit 1
 cp "${NE_NAME}" "${HOME}/rpmbuild/BUILDROOT/${NE_NAME}"
 cp "lib/systemd/${NE_NAME}.service" ~/rpmbuild/SOURCES/
 cp "packages/rpm/${NE_NAME}.spec" ~/rpmbuild/SPECS/
