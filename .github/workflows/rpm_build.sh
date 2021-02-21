@@ -1,7 +1,7 @@
 orig=$(pwd)
 pwd
 ls
-cd ..
+cd ../..
 pwd
 ls
 cp "${NE_NAME}" "${HOME}/rpmbuild/BUILDROOT/${NE_NAME}"
