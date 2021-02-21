@@ -1,10 +1,10 @@
 orig=$(pwd)
 pwd
 ls
-cd ../..
+cd ..
 pwd
-ls
-cp "${NE_NAME}" "${HOME}/rpmbuild/BUILDROOT/${NE_NAME}"
+file "${NE_NAME}-latest"
+cp "${NE_NAME}-latest" "${HOME}/rpmbuild/BUILDROOT/${NE_NAME}"
 cp "lib/systemd/${NE_NAME}.service" ~/rpmbuild/SOURCES/
 cp "packages/rpm/${NE_NAME}.spec" ~/rpmbuild/SPECS/
 cd ~/rpmbuild/SPECS || exit 1
